@@ -1,0 +1,16 @@
+#Fibonacci
+#n-1 + n-2
+
+def fibonnaci(n):
+    if n == 1 or n == 0:
+        return n
+    else:
+        return fibonnaci(n-1) + fibonnaci(n-2)
+
+
+print("¿Cuál es el número de términos a imprimir?")
+
+numberTerms = input()
+
+for x in range(int(numberTerms)):
+    print(fibonnaci(x))
